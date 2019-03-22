@@ -27,62 +27,7 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
-	&:not([class="load"])
-		#app
-			opacity: 0
-		.loader
-			opacity: 1
-			z-index: 12
-		.sec
-			background-image: none!important
-	&.load
-		img
-			display: initial
-		&.touch
-			#app
-				opacity: 1
-.bgi
-	position: absolute
-	top: 0
-	right: 0
-	left: auto
-	width: 768px
-	height: auto
-	opacity: .8
-	&.bgfix
-		position: fixed
-		z-index: -1
-		img
-			height: auto
-			width: 100%
-	picture
-		width: 100%
-.title
-	transform: skewY(-8deg)
-	max-width: 300px
-	width: 100%
-	margin-left: auto
-	margin-right: auto
-	margin-bottom: 30px
-	overflow: hidden
-	.h4
-		font-size: $h4
-		line-height: 2rem
-		font-family: $bold-font
-		text-transform: uppercase
-		letter-spacing: -0.05rem
-		display: block
-		margin: 0
-		padding: 0
-	.h3
-		font-size: 26px
-		line-height: 1.6rem
-		font-family: $bold-font
-		text-transform: uppercase
-		letter-spacing: -0.05rem
-		display: block
-		margin-bottom: 8px
-		margin-top: 8px
+
 		span
 			background: linear-gradient(to right,$gr1 30%,$gr2 100%)
 			-webkit-text-fill-color: transparent
@@ -105,20 +50,7 @@ body
 	text-align: left
 .text-right
 	text-align: right
-.app
-	position: relative	
-	z-index: 11
-	transition: opacity .2s ease-out
-	overflow: hidden
-.sec.sec0
-	background-image: url('../m/img/bg_new.jpg')
-	background-repeat: no-repeat
-	background-position: 50% 0%
-	background-size: cover
-	background-color: #55294e
-	padding: 0
-	.logo
-		max-width: 140px
+
 a, button, .thumb
 	transition:  .15s ease-out
 	cursor: pointer
@@ -127,21 +59,7 @@ span.target
 	transition: 2s ease
 p
 	font-size: 14px
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-	&.img-width
-		width: 100%
-.no-gutters
-	margin-right: 0
-	margin-left: 0
-	&>.col,
-	&>[class*="col-"]
-		padding-right: 0
-		padding-left: 0
-.text-center
-	text-align: center
+
 	img
 		margin-left: auto
 		margin-right: auto
@@ -160,31 +78,7 @@ h2
 	font-family: $black-font
 picture
 	display: inline-block
-.lead-l
-	font-family: $default-font
-.b-upp
-	font-family: $bold-font
-	text-transform: uppercase
-.upp
-	text-transform: uppercase
-.cg
-	color: $gold
-.ct
-	color: $text
-.cgr
-	color: $gray
-.gr1
-	color: $gr1
-.gr2
-	color: $gr2
-.cw
-	color: white
-.sec-b
-	color: #fff
-.bgw
-	background-color: white
-.bggr
-	background-color: $gray
+
 button.bt
 	padding-top: 2px
 .bt
@@ -214,18 +108,7 @@ button.bt
 		padding-top: 8px
 		padding-bottom: 8px
 		color: $gr2
-.play
-	background: none
-	width: 60px
-	height: 60px
-	min-height: auto
-	min-width: auto
-	border: 3px solid #fff
-	padding-top: 4px
-	padding-left: 0
-	padding-right: 0
-	padding-bottom: 0
-	outline: none
+
 	svg
 		max-width: 33px
 		filter: invert(0%)
@@ -258,13 +141,7 @@ button.bt
 	font-size: 9px
 	padding-right: 10px
 
-.sec
-	background-size: contain
-	background-repeat: no-repeat
-	background-position: 50% 0%
-	padding-top: 60px
-	padding-bottom: 60px
-.text-center
+
 	h3
 		position: relative
 		&:before
@@ -310,74 +187,13 @@ h3
 ul
 	li
 		margin-bottom: 10px
-.lead
-	font-size: 1.25rem
-	strong
-		font-family: $black-font
-.header
-	position: absolute
-	z-index: 22
-	width: 100%
-	left: 0
-	top: 0
-	&.fix
-		position: fixed
-		z-index: 22
-		width: 100%
-		left: 0
-		background: linear-gradient(to right,$gr0 0,$gr3 100%)
-		top: 0
-		padding-top: 0px
-		&:after
-			display: none
-		&:before
-			background-color: #fff
-		span
-			color: #fff
-		.row
-			height: 60px
-		.logo
-			max-width: 80px
-			filter: invert(50%) brightness(2)
-		.bt
-			padding: 6px 12px
-			min-height: 32px
-			font-size: 16px
-			transform: none
-			&:hover
-				color: $gr1
-				border-color: $gr2
-	.bt
-		transform: none
-		&.popup
-			display: none
-	.logo
-		max-width: 80px
-	.row
-		height: 50px
+
 	span
 		color: $gold
 	p
 		margin-bottom: 5px
 		margin-top: 0
-	.phone
-		background: linear-gradient(to right,$gr1 0,$gr2 100%)
-		-webkit-text-fill-color: transparent
-		color: #b42fa8
-		-webkit-background-clip: text
-		display: inline-block
-		padding: 2px
-		border-color: transparent
-	a:hover
-		.phone
-			filter: hue-rotate(-40deg)
-.grafik
-	background-repeat: no-repeat
-	background-position: 0% 10px
-	background-size: contain
-	padding-top: 20px
-	.row
-		min-height: auto
+	
 	span
 		max-width: 210px
 		color: #fff
@@ -394,67 +210,9 @@ ul
 			top: 12px
 			background-color: $gr1
 			transform: skewY(-12deg)
-	.g1
-		transform: translateX(220px)
-	.g2
-		transform: translateX(350px) translateY(70px)
-	.g3
-		transform: translateX(90px) translateY(40px)
-	.g4
-		transform: translateX(150px) translateY(140px)
-	.g5
-		transform: translateX(50px) translateY(180px)
-.data
-	max-width: 162px
-	width: 100%
-	background-image: url('../img/SVG/bg-data.svg')
-	background-repeat: no-repeat
-	background-position: 0
-	text-align: center
-	padding-top: 30px
-	padding-bottom: 30px
-	padding-left: 20px
-	position: relative
-	left: 0
-	display: none
-	margin-left: auto
-	margin-right: auto
+
 	p
-		margin-top: 0
-		padding-bottom: 5px
-	.fz36
-		transform: translateX(60px)
-.first-sec
-	.title
-		margin-bottom: 0px
-	.logo
-		margin-left: 20px
-	p
-		margin-bottom: 0
-		//font-size: 12px
-		line-height: 1.1rem
-	.bt
-		margin-top: 30px
-	.text-left
-		text-align: center
-.height-full
-	height: auto
-	min-height: 640px
-.row-f
-	height: auto
-	min-height: 520px	
-	max-height: 720px
-.fz12
-	font-size: 12px
-	line-height: 18px
-.fz26
-	font-size: 20px
-.fz36
-	font-size: 36px
-.fz18
-	font-size: 18px
-.img-circle
-	border-radius: 50%
+
 h2
 	margin-bottom: 20px
 h3
@@ -482,11 +240,7 @@ h3
 	100%
 		//transform: translateY(40px)
 		opacity: 1
-.lines
-	position: absolute
-	top: 20px
-	left: 0px
-	width: 100%
+
 	&>div
 		display: inline-block
 		width: 100%
