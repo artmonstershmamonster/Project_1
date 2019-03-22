@@ -1,0 +1,684 @@
+@import "vars"
+@import "libs"
+
+.youtubeiframe
+	iframe
+		width: 100%
+		height: 416px
+		
+.data-d
+	max-width: 100px
+	width: 100%
+	background-image: url('../img/SVG/bg-data-d.svg')
+	background-repeat: no-repeat
+	background-position: 100% 0
+	padding-top: 24px
+	padding-bottom: 20px
+	padding-right: 10px
+	transform: translateX(-20px)
+	display: inline-block
+	position: absolute
+	top: 0px
+	p
+		margin-top: 0
+		padding-bottom: 5px
+		b
+			display: block	
+	.fz18
+		font-size: 16px
+.days-title
+	padding-left: 90px
+	font-size: 16px
+ul.lists
+	margin: 0 0 40px 0
+	padding: 0 5px 0 0
+	list-style: none
+	li
+		position: relative
+		margin-bottom: 20px
+		padding-left: 20px
+		&:before
+			content: ""
+			width: 10px
+			height: 2px
+			position: absolute
+			left: 0px
+			top: 12px
+			background-color: $gr1
+			transform: skewY(-12deg)
+.sec.mag-bg
+	position: relative
+	background-color: white
+	margin-top: 0px
+	&:before
+		content: ""
+		width: 100%
+		height: 47px
+		position: absolute
+		left: 0
+		top: -45px
+		background-image: url('../m/img/bg-2.png')
+		background-repeat: no-repeat
+		background-position: 50% 100%
+		background-size: 100%
+	&:after
+		content: ""
+		width: 100%
+		height: 47px
+		position: absolute
+		left: 0
+		bottom: -45px
+		background-image: url('../m/img/bg-bottom.png')
+		background-repeat: no-repeat
+		background-position: 50% 0
+		background-size: 100%
+.sec.sec3
+	background-image: url('../m/img/bg-3.jpg')
+	background-size: cover
+	padding-top: 70px
+	background-position: 0% 0px
+	.title
+		margin-left: 0
+		margin-bottom: 80px
+.days
+	max-width: 100%
+	margin-bottom: 80px
+.sec.sec4	
+	//background-image: url('../m/img/bg4.png')
+	background-color: #3d2245
+	background-repeat: no-repeat
+	background-position: 30% 0%
+	background-size: auto 160px
+.sec.sec6
+	//background-image: url('../m/img/bg6.png')
+	background-size: auto 290px
+	padding-top: 60px
+	background-position: 50% -100px
+	background-color: $gr0
+	ul
+		margin-top: 20px
+	.text-right
+		text-align: left
+	.col-lg-4 .title
+		margin-left: 0
+	.title .h3
+		margin-left: 0
+		margin-bottom: 60px
+		
+			
+.img
+	background-image: url('../m/img/polka.png')
+	background-repeat: no-repeat
+	background-position: 50% 108%
+	background-size: 100%
+	padding-right: 6.5%
+	max-width: 290px
+	margin-left: auto
+	margin-right: auto
+	img
+		padding-bottom: 15px
+		padding-top: 40px
+		margin-left: auto
+		margin-right: auto
+.bg3
+	.first
+		padding: 0 0 20px 0
+		img
+			max-height: 120px
+			margin-bottom: 20px
+			margin-top: 20px
+	.secconds
+		padding-top: 24%
+		background-color: #272727	
+		position: relative
+		background-image: url('../m/img/bg-3.jpg')
+		background-repeat: no-repeat
+		background-position: 50% 0
+		background-size: 100%
+		.bt
+			margin-bottom: 40px
+.sec.sec5
+	ul
+		margin-top: 50px
+		li
+			max-width: 100%
+.sec.two
+	//background-image: url('../m/img/bg1.png')
+	//background-repeat: no-repeat
+	//background-position: 50% 100%
+	.mfp-close
+		display: none
+		visibility: hidden
+	h3
+		margin-top: 20px
+.player
+	display: inline-block
+	position: relative
+	margin-bottom: 20px
+	margin-top: 40px
+	&:hover
+		picture
+			opacity: 0.4
+		
+		.thumb
+			background-color: $gr1
+		.play
+			border-color: #fff
+			svg
+				filter: invert(100%)
+	.thumb
+		position: relative
+		img
+			max-width: 560px
+			width: 100%
+	.play
+		background: none
+		position: absolute
+		top: calc(50% - 30px)
+		left: calc(50% - 30px)
+		width: 60px
+		height: 60px
+		min-height: auto
+		min-width: auto
+		border: 4px solid $gr0
+		padding-top: 4px
+		padding-left: 5px
+		padding-right: 0
+		padding-bottom: 0
+		outline: none
+		svg
+			max-width: 24px
+			filter: invert(0%)
+			outline: none
+	#ytplayerOne,
+	#ytplayerTwo,
+	#ytplayerThree
+		position: absolute
+		top: 0px
+		
+iframe
+	max-width: 100%
+	height: auto
+	min-height: 200px
+.container.last
+	padding-bottom: 60px
+.sec.bgw
+	.bt
+		margin-bottom: 60px
+		margin-top: 20px
+.bt.bt-block
+	width: 100%
+.pic2
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 40px
+.bg3 .secconds
+	img
+		margin-left: auto
+		margin-right: auto
+	h3
+		margin-top: 40px
+.tr-mob
+	text-align: right
+.tc-mob
+	text-align: center
+	h3
+		&:before
+			left: calc(50% - 90px)
+		&:after
+			left: calc(50% - 20px)
+.slider
+	margin-bottom: 40px
+	.item
+		padding-left: 15px
+		padding-right: 15px
+		img
+			border: 1px solid #e8e7e7
+.slider-nav
+	width: 100%
+	height: 6px
+	margin-bottom: 20px
+	position: relative
+	border-bottom: 1px solid $gold
+	.target
+		background-color: $text
+		height: 5px
+		display: inline-block
+		position: absolute
+		left: 0
+		bottom: -5px
+.last
+	img
+		margin-bottom: 20px
+hr
+	border-top: 1px solid rgba($gold, .3)
+	border-bottom: none
+footer
+	background-image: url('../m/img/bg_new.jpg')
+	background-repeat: no-repeat
+	background-position: 50% 30%
+	background-size: cover
+	padding-top: 20px
+	padding-bottom: 20px
+	.ico
+		opacity: .2
+		font-size: 36px
+		padding-top: 10px
+		padding-bottom: 10px
+		display: inline-block
+	p, span
+		color: rgba(white, .4)
+		font-size: 13px
+		line-height: 17px
+		&.cg
+			opacity: .5
+	.nav-cont
+		margin-bottom: 18px
+	a
+		color: $gr1
+		padding: 0
+		margin: 0
+		&:hover
+			border-color: transparent
+			color: #fff
+	.nav-link
+		opacity: .5
+		color: $gr1
+		font-size: 12px
+		border-bottom: 1px dotted $gr1
+		margin-right: 10px
+		display: inline-block
+		margin-bottom: 5px
+		&:hover
+			border-color: transparent
+			color: #fff
+			opacity: 1
+	.contacts
+		margin-bottom: 20px
+		border-bottom: 1px dotted rgba(white, .2)
+		padding-bottom: 30px
+	.card
+		opacity: .2
+		margin-bottom: 18px
+	.logo
+		margin-left: 16px
+		max-width: 100px
+.mfp-zoom
+	.mfp-with-anim
+		opacity: 0
+		transition: all 0.5s 
+		transform: scale(0.5)
+		border: 2px solid #fff
+		padding: 0
+		border-radius: 24px
+		background-color: #fff
+		position: relative
+		&.mfp-bg
+			opacity: 0
+			transition: all .4s 
+		.sp-img
+			border-radius: 50%
+			border: 6px solid $gold
+			display: inline-block
+			img
+				border-radius: 50%
+				border: 6px solid #fff
+		.desc
+			max-height: 232px
+			overflow: auto
+			margin-top: 32px
+		.h2
+			margin-bottom: 0
+	&.mfp-ready
+		.mfp-with-anim
+			opacity: 1
+			transform: scale(1)
+			.sp-img
+				width: 160px
+				height: 160px
+				img
+					width: 148px
+					height: 148px
+		&.mfp-bg
+			opacity: .9
+			transition: all .3s 
+	&.mfp-removing
+		.mfp-with-anim
+			transform: scale(0)
+			opacity: 0
+		&.mfp-bg
+			opacity: 0
+			transition: all .4s
+.mfp-close-btn-in .mfp-close
+	top: 0
+	right: 0px
+.mfp-content
+	.error-message
+		position: absolute
+		left: calc(0% + 15px)
+		bottom: 10px
+		width: calc(100% - 30px)
+		font-size: 11px
+		color: red
+		text-align: center
+.mfp-zoom-in
+	.mfp-with-anim
+		position: relative
+		opacity: 0
+		transition: all 0.4s
+		padding: 0
+		&.mfp-bg
+			opacity: 0
+			transition: all 0.3s
+		.sp-img
+			border-radius: 50%
+			border: 6px solid $gold
+			display: inline-block
+			img
+				border-radius: 50%
+				border: 6px solid #fff
+		.desc
+			max-height: 232px
+			overflow: auto
+			margin-top: 32px
+		.h2
+			margin-bottom: 0
+	&.mfp-ready
+		.mfp-with-anim
+			opacity: 1
+			.sp-img
+				width: 160px
+				height: 160px
+				img
+					width: 148px
+					height: 148px
+		&.mfp-bg
+			opacity: .8
+	&.mfp-removing
+		.mfp-with-anim
+			opacity: 0
+			transition: all 0.2s
+		&.mfp-bg
+			opacity: 0
+			transition: all 0.2s
+.term-popup
+	border-radius: 0!important
+	max-width: 1200px
+	width: 100%
+	margin: 40px auto
+	position: relative
+	padding: 30px 30px 10px 30px!important
+	background-color: white
+	p
+		margin-bottom: 10px
+		strong
+			margin-top: 20px
+			display: inline-block
+	.h2
+		margin-top: 32px
+		margin-bottom: 20px
+	.form
+		padding-left: 0
+		padding-right: 0
+		padding-top: 0
+.send
+	.fields,
+	p
+		opacity: 0
+	.cssload-loader
+		position: absolute
+		left: calc(50% - 40px)
+		width: 80px
+		height: 80px
+		border-radius: 50%
+		-o-border-radius: 50%
+		-ms-border-radius: 50%
+		-webkit-border-radius: 50%
+		-moz-border-radius: 50%
+		perspective: 1500px
+		z-index: 999
+		top: 40%
+		-webkit-transition: all 0.3s
+		-moz-transition: all 0.3s
+		transition: all 0.3s
+	.cssload-inner
+		position: absolute
+		width: 100%
+		height: 100%
+		box-sizing: border-box
+		-o-box-sizing: border-box
+		-ms-box-sizing: border-box
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		border-radius: 50%
+		-o-border-radius: 50%
+		-ms-border-radius: 50%
+		-webkit-border-radius: 50%
+		-moz-border-radius: 50%	
+		&.cssload-one
+			left: 0%
+			top: 0%
+			animation: cssload-rotate-one 2.5s linear infinite
+			-o-animation: cssload-rotate-one 2.5s linear infinite
+			-ms-animation: cssload-rotate-one 2.5s linear infinite
+			-webkit-animation: cssload-rotate-one 2.5s linear infinite
+			-moz-animation: cssload-rotate-one 2.5s linear infinite
+			border-bottom: 6px solid $gold
+		&.cssload-two
+			right: 0%
+			top: 0%
+			animation: cssload-rotate-two 2.5s linear infinite
+			-o-animation: cssload-rotate-two 2.5s linear infinite
+			-ms-animation: cssload-rotate-two 2.5s linear infinite
+			-webkit-animation: cssload-rotate-two 2.5s linear infinite
+			-moz-animation: cssload-rotate-two 2.5s linear infinite
+			border-right: 6px solid $gold
+		&.cssload-three
+			right: 0%
+			bottom: 0%
+			animation: cssload-rotate-three 2.5s linear infinite
+			-o-animation: cssload-rotate-three 2.5s linear infinite
+			-ms-animation: cssload-rotate-three 2.5s linear infinite
+			-webkit-animation: cssload-rotate-three 2.5s linear infinite
+			-moz-animation: cssload-rotate-three 2.5s linear infinite
+			border-top: 6px solid $gold
+.form-popup
+	max-width: 420px
+	margin-left: auto
+	margin-right: auto
+form
+	input, textarea
+		border: 1px solid $gold
+		padding: 16px
+		width: 100%
+		margin-bottom: 10px
+		font-size: 16px
+		font-family: $bold-font
+	.bt
+		width: 100%
+		margin-bottom: 15px
+		margin-top: 25px
+.form
+	max-width: 420px
+	margin: 0 auto
+	position: relative
+	border-bottom: 2px solid $gold
+	border-radius: 0px
+	background-color: #fff
+	padding: 46px
+	.preloader
+		animation-play-state: paused
+		opacity: 0
+	&.send
+		.preloader
+			animation-play-state: running
+			opacity: 1
+		.form-cont
+			opacity: 0
+	small, label
+		font-size: 14px
+		display: inline-block
+		margin-bottom: 5px
+		color: #888
+.error-message
+	position: absolute
+	right: calc(0% + 15px)
+	bottom: 0px
+	width: 50%
+	font-size: 11px
+	color: red
+.intl-tel-input
+	width: 100%
+	margin-bottom: 10px
+.country-list
+	color: $text
+	z-index: 661
+@keyframes img_lazy
+	0%
+		opacity: 0
+	100%
+		opacity: 1
+@keyframes play-anim-circle
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+
+@keyframes cssload-rotate-one
+	0%
+		transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg)
+
+	100%
+		transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg)
+
+
+@-o-keyframes cssload-rotate-one
+	0%
+		-o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg)
+
+	100%
+		-o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg)
+
+
+@-ms-keyframes cssload-rotate-one
+	0%
+		-ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg)
+
+	100%
+		-ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg)
+
+
+@-webkit-keyframes cssload-rotate-one
+	0%
+		-webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg)
+
+	100%
+		-webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg)
+
+
+@-moz-keyframes cssload-rotate-one
+	0%
+		-moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg)
+
+	100%
+		-moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg)
+
+
+@keyframes cssload-rotate-two
+	0%
+		transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg)
+
+	100%
+		transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg)
+
+
+@-o-keyframes cssload-rotate-two
+	0%
+		-o-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg)
+
+	100%
+		-o-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg)
+
+
+@-ms-keyframes cssload-rotate-two
+	0%
+		-ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg)
+
+	100%
+		-ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg)
+
+
+@-webkit-keyframes cssload-rotate-two
+	0%
+		-webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg)
+
+	100%
+		-webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg)
+
+
+@-moz-keyframes cssload-rotate-two
+	0%
+		-moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg)
+
+	100%
+		-moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg)
+
+
+@keyframes cssload-rotate-three
+	0%
+		transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg)
+
+	100%
+		transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg)
+
+
+@-o-keyframes cssload-rotate-three
+	0%
+		-o-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg)
+
+	100%
+		-o-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg)
+
+
+@-ms-keyframes cssload-rotate-three
+	0%
+		-ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg)
+
+	100%
+		-ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg)
+
+
+@-webkit-keyframes cssload-rotate-three
+	0%
+		-webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg)
+
+	100%
+		-webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg)
+@-moz-keyframes cssload-rotate-three
+	0%
+		-moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg)
+	100%
+		-moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg)
+@keyframes bounces
+	0%
+		-webkit-transform: translateY(0em)
+		-moz-transform: translateY(0em)
+		-ms-transform: translateY(0em)
+		-o-transform: translateY(0em)
+		transform: translateY(0em)
+		opacity: .3
+	25%
+		-webkit-transform: translateY(0.8em)
+		-moz-transform: translateY(0.8em)
+		-ms-transform: translateY(0.8em)
+		-o-transform: translateY(0.8em)
+		transform: translateY(0.8em)
+		opacity: 1
+	100%
+		-webkit-transform: translateY(0em)
+		-moz-transform: translateY(0em)
+		-ms-transform: translateY(0em)
+		-o-transform: translateY(0em)
+		transform: translateY(0em)
+		opacity: .3
+@import "media" // Always at the end

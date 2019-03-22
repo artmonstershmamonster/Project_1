@@ -1,0 +1,630 @@
+@import "sass/vars"
+@import "sass/fonts"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $gold
+	color: #fff
+img
+	display: none
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.3rem
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	margin: 0
+	padding: 0
+	border: 0
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+	&:not([class="load"])
+		#app
+			opacity: 0
+		.loader
+			opacity: 1
+			z-index: 12
+		.sec
+			background-image: none!important
+	&.load
+		img
+			display: initial
+		&.touch
+			#app
+				opacity: 1
+.bgi
+	position: absolute
+	top: 0
+	right: 0
+	left: auto
+	width: 768px
+	height: auto
+	opacity: .8
+	&.bgfix
+		position: fixed
+		z-index: -1
+		img
+			height: auto
+			width: 100%
+	picture
+		width: 100%
+.title
+	transform: skewY(-8deg)
+	max-width: 300px
+	width: 100%
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 30px
+	overflow: hidden
+	.h4
+		font-size: $h4
+		line-height: 2rem
+		font-family: $bold-font
+		text-transform: uppercase
+		letter-spacing: -0.05rem
+		display: block
+		margin: 0
+		padding: 0
+	.h3
+		font-size: 26px
+		line-height: 1.6rem
+		font-family: $bold-font
+		text-transform: uppercase
+		letter-spacing: -0.05rem
+		display: block
+		margin-bottom: 8px
+		margin-top: 8px
+		span
+			background: linear-gradient(to right,$gr1 30%,$gr2 100%)
+			-webkit-text-fill-color: transparent
+			color: #b42fa8
+			-webkit-background-clip: text
+			display: block
+		small
+			display: inline
+			font-family: $light-font
+	small
+		font-size: 18px
+		text-transform: none
+		display: block
+		line-height: 20px
+		background: none
+		&.fz24
+			font-size: 16px
+			color: $gr1
+.text-left
+	text-align: left
+.text-right
+	text-align: right
+.app
+	position: relative	
+	z-index: 11
+	transition: opacity .2s ease-out
+	overflow: hidden
+.sec.sec0
+	background-image: url('../m/img/bg_new.jpg')
+	background-repeat: no-repeat
+	background-position: 50% 0%
+	background-size: cover
+	background-color: #55294e
+	padding: 0
+	.logo
+		max-width: 140px
+a, button, .thumb
+	transition:  .15s ease-out
+	cursor: pointer
+
+span.target
+	transition: 2s ease
+p
+	font-size: 14px
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+.no-gutters
+	margin-right: 0
+	margin-left: 0
+	&>.col,
+	&>[class*="col-"]
+		padding-right: 0
+		padding-left: 0
+.text-center
+	text-align: center
+	img
+		margin-left: auto
+		margin-right: auto
+		
+.text-right
+	text-align: right
+.text-left
+	text-align: left
+a
+	text-decoration: none!important
+b, strong
+	font-family: $bold-font
+h2
+	font-family: $black-font
+h2
+	font-family: $black-font
+picture
+	display: inline-block
+.lead-l
+	font-family: $default-font
+.b-upp
+	font-family: $bold-font
+	text-transform: uppercase
+.upp
+	text-transform: uppercase
+.cg
+	color: $gold
+.ct
+	color: $text
+.cgr
+	color: $gray
+.gr1
+	color: $gr1
+.gr2
+	color: $gr2
+.cw
+	color: white
+.sec-b
+	color: #fff
+.bgw
+	background-color: white
+.bggr
+	background-color: $gray
+button.bt
+	padding-top: 2px
+.bt
+	font-family: $bold-font
+	border: 0
+	border-radius: 0px!important
+	background: linear-gradient(to right,$gr1 30%,$gr2 100%)
+	font-size: 15px
+	color: #fff
+	padding: 21px 26px 0px 26px
+	min-height: 60px
+	display: inline-block
+	text-transform: uppercase
+	vertical-align: middle
+	text-align: center
+	line-height: normal
+	min-width: 190px
+	letter-spacing: .037rem
+	transform: translateY(0px) skewY(-8deg)
+	&:hover
+		transform: translateY(-3px) translateX(5px) skewY(-8deg)
+		filter: hue-rotate(-40deg)
+	&.bt-invert
+		background: none
+		border: 3px solid $gr2
+		min-height: auto
+		padding-top: 8px
+		padding-bottom: 8px
+		color: $gr2
+.play
+	background: none
+	width: 60px
+	height: 60px
+	min-height: auto
+	min-width: auto
+	border: 3px solid #fff
+	padding-top: 4px
+	padding-left: 0
+	padding-right: 0
+	padding-bottom: 0
+	outline: none
+	svg
+		max-width: 33px
+		filter: invert(0%)
+		outline: none
+		margin-left: auto
+		margin-right: auto
+		display: block
+.bt-play
+	display: inline-block
+	vertical-align: top
+	width: 27%
+	margin-right: 10px
+	.bt
+		padding-left: 26px
+		padding-right: 22px
+		font-size: 2rem
+		padding-top: 10px
+		padding-bottom: 0
+		margin-right: 0px
+		margin-left: 0px
+		min-width: 40px
+.bt-text
+	max-width: 130px
+	display: inline-block
+	vertical-align: middle
+	text-align: right
+	float: right
+	padding-top: 10px
+	padding-bottom: 10px
+	font-size: 9px
+	padding-right: 10px
+
+.sec
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: 50% 0%
+	padding-top: 60px
+	padding-bottom: 60px
+.text-center
+	h3
+		position: relative
+		&:before
+			content: ""
+			width: 180px
+			height: 1px
+			background-color: $gold
+			position: absolute
+			left: calc(50% - 90px)
+			bottom: -20px
+		&:after
+			content: ""
+			width: 40px
+			height: 2px
+			background-color: $gold
+			position: absolute
+			left: calc(50% - 20px)
+			bottom: -22px
+h3
+	position: relative
+	&:before
+		content: ""
+		width: 180px
+		height: 1px
+		background-color: $gold
+		position: absolute
+		left: 0
+		bottom: -20px
+	&:after
+		content: ""
+		width: 40px
+		height: 2px
+		background-color: $gold
+		position: absolute
+		left: 0
+		bottom: -22px
+	picture
+		padding-top: 8px
+		padding-right: 12px
+	small
+		display: block
+		font-size: 1.25rem
+ul
+	li
+		margin-bottom: 10px
+.lead
+	font-size: 1.25rem
+	strong
+		font-family: $black-font
+.header
+	position: absolute
+	z-index: 22
+	width: 100%
+	left: 0
+	top: 0
+	&.fix
+		position: fixed
+		z-index: 22
+		width: 100%
+		left: 0
+		background: linear-gradient(to right,$gr0 0,$gr3 100%)
+		top: 0
+		padding-top: 0px
+		&:after
+			display: none
+		&:before
+			background-color: #fff
+		span
+			color: #fff
+		.row
+			height: 60px
+		.logo
+			max-width: 80px
+			filter: invert(50%) brightness(2)
+		.bt
+			padding: 6px 12px
+			min-height: 32px
+			font-size: 16px
+			transform: none
+			&:hover
+				color: $gr1
+				border-color: $gr2
+	.bt
+		transform: none
+		&.popup
+			display: none
+	.logo
+		max-width: 80px
+	.row
+		height: 50px
+	span
+		color: $gold
+	p
+		margin-bottom: 5px
+		margin-top: 0
+	.phone
+		background: linear-gradient(to right,$gr1 0,$gr2 100%)
+		-webkit-text-fill-color: transparent
+		color: #b42fa8
+		-webkit-background-clip: text
+		display: inline-block
+		padding: 2px
+		border-color: transparent
+	a:hover
+		.phone
+			filter: hue-rotate(-40deg)
+.grafik
+	background-repeat: no-repeat
+	background-position: 0% 10px
+	background-size: contain
+	padding-top: 20px
+	.row
+		min-height: auto
+	span
+		max-width: 210px
+		color: #fff
+		display: block
+		position: relative
+		padding-left: 20px
+		font-size: 14px
+		&:before
+			content: ""
+			width: 10px
+			height: 2px
+			position: absolute
+			left: 0px
+			top: 12px
+			background-color: $gr1
+			transform: skewY(-12deg)
+	.g1
+		transform: translateX(220px)
+	.g2
+		transform: translateX(350px) translateY(70px)
+	.g3
+		transform: translateX(90px) translateY(40px)
+	.g4
+		transform: translateX(150px) translateY(140px)
+	.g5
+		transform: translateX(50px) translateY(180px)
+.data
+	max-width: 162px
+	width: 100%
+	background-image: url('../img/SVG/bg-data.svg')
+	background-repeat: no-repeat
+	background-position: 0
+	text-align: center
+	padding-top: 30px
+	padding-bottom: 30px
+	padding-left: 20px
+	position: relative
+	left: 0
+	display: none
+	margin-left: auto
+	margin-right: auto
+	p
+		margin-top: 0
+		padding-bottom: 5px
+	.fz36
+		transform: translateX(60px)
+.first-sec
+	.title
+		margin-bottom: 0px
+	.logo
+		margin-left: 20px
+	p
+		margin-bottom: 0
+		//font-size: 12px
+		line-height: 1.1rem
+	.bt
+		margin-top: 30px
+	.text-left
+		text-align: center
+.height-full
+	height: auto
+	min-height: 640px
+.row-f
+	height: auto
+	min-height: 520px	
+	max-height: 720px
+.fz12
+	font-size: 12px
+	line-height: 18px
+.fz26
+	font-size: 20px
+.fz36
+	font-size: 36px
+.fz18
+	font-size: 18px
+.img-circle
+	border-radius: 50%
+h2
+	margin-bottom: 20px
+h3
+	font-size: 1.25rem
+	line-height: 1.75rem
+	margin-bottom: 30px
+	span
+		display: inline-block
+	small
+		font-size: 1rem
+	span
+		font-size: 1rem
+@keyframes anim_plus
+	0%
+		//transform: translateY(0px)
+		opacity: 1
+	25%
+		//transform: translateY(10px)
+		opacity: 0
+	50%
+		opacity: 1
+		//transform: translateY(-27px)
+	75%
+		opacity: 0
+	100%
+		//transform: translateY(40px)
+		opacity: 1
+.lines
+	position: absolute
+	top: 20px
+	left: 0px
+	width: 100%
+	&>div
+		display: inline-block
+		width: 100%
+		margin-bottom: 2.5%
+		animation: anim_plus 3.5s
+		animation-fill-mode: forwards
+		animation-timing-function: ease-in-out
+		animation-iteration-count: infinite
+		&:nth-child(2)
+			animation: anim_plus 3s
+			animation-fill-mode: forwards
+			animation-timing-function: ease-in-out
+			animation-iteration-count: infinite
+		&:nth-child(3)
+			animation: anim_plus 3.5s
+			animation-fill-mode: forwards
+			animation-timing-function: ease-in-out
+			animation-iteration-count: infinite
+			animation-delay: 3.2s
+		&:nth-child(4)
+			animation: anim_plus 5s
+			animation-fill-mode: forwards
+			animation-timing-function: ease-in-out
+			animation-iteration-count: infinite
+			animation-delay: 5.8s
+		&:nth-child(5)
+			animation: anim_plus 3.5s
+			animation-fill-mode: forwards
+			animation-timing-function: ease-in-out
+			animation-iteration-count: infinite
+			animation-delay: 3.6s
+		&:nth-child(6)
+			animation: anim_plus 2s
+			animation-fill-mode: forwards
+			animation-timing-function: ease-in-out
+			animation-iteration-count: infinite
+		&:nth-child(7)
+			animation: anim_plus 5.5s
+			animation-fill-mode: forwards
+			animation-timing-function: ease-in-out
+			animation-iteration-count: infinite
+			animation-delay: 3.2s
+	svg
+		display: inline
+		max-width: 100%
+		opacity: .8
+		&.svg-25
+			max-width: 35%
+		&.svg-50
+			max-width: 65%
+		&.svg-75
+			max-width: 85%
+	line
+		stroke-width: 1px
+		stroke-dasharray: 480
+		stroke-dashoffset: 1200
+		stroke: $gr1
+		z-index: -1
+		&.l1
+			animation: anim_lines 4.9s
+			animation-fill-mode: forwards
+			animation-timing-function: ease-out
+			animation-iteration-count: infinite
+		&.l2
+			animation: anim_lines2 5.3s
+			animation-fill-mode: forwards
+			animation-timing-function: ease-out
+			animation-iteration-count: infinite
+		&.l3
+			animation: anim_lines3 4.35s
+			animation-fill-mode: forwards
+			animation-timing-function: ease-out
+			animation-iteration-count: infinite
+		&.l4
+			animation: anim_lines4 5.7s
+			animation-fill-mode: forwards
+			animation-timing-function: ease-out
+			animation-iteration-count: infinite
+@keyframes anim_lines3
+	100%
+		stroke-dasharray: 480
+		stroke-dashoffset: 50
+		stroke-width: 2px
+	40%
+		stroke-dasharray: 480
+		stroke-dashoffset: -480
+		stroke-width: 4px
+	0%
+		stroke-dasharray: 480
+		stroke-dashoffset: -1440
+		stroke-width: 2px
+		stroke: $gr2
+
+@keyframes anim_lines2
+	100%
+		stroke-dasharray: 480
+		stroke-dashoffset: 50
+		stroke-width: 2px
+	70%
+		stroke-dasharray: 480
+		stroke-dashoffset: -1440
+		stroke-width: 4px
+	0%
+		stroke-dasharray: 480
+		stroke-dashoffset: -1920
+		stroke-width: 2px
+		stroke: $gr2
+
+@keyframes anim_lines4
+	100%
+		stroke-dasharray: 480
+		stroke-dashoffset: 1540
+		stroke-width: 2px
+	30%
+		stroke-dasharray: 480
+		stroke-dashoffset: 480
+		stroke-width: 4px
+	0%
+		stroke-dasharray: 480
+		stroke-dashoffset: -480
+		stroke-width: 2px
+		stroke: $gr2
+
+@keyframes anim_lines
+	100%
+		stroke-dasharray: 480
+		stroke-dashoffset: 50
+		stroke-width: 4px
+	45%
+		stroke-dasharray: 480
+		stroke-dashoffset: -480
+		stroke-width: 2px
+	25%
+		stroke-dasharray: 480
+		stroke-dashoffset: -1440
+		stroke-width: 4px
+	0%
+		stroke-dasharray: 480
+		stroke-dashoffset: -2400
+		stroke-width: 2px
+		stroke: $gr2

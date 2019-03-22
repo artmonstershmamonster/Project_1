@@ -1,0 +1,183 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+		
+// ≥768px
++media-breakpoint-down(sm)
+	.first-sec
+		.cw
+			br
+				display: none
+// ≥576px
++media-breakpoint-down(xs)
+	.grafik .g1,
+	.grafik .g2,
+	.grafik .g3,
+	.grafik .g4,
+	.grafik .g5
+		transform: none
+		max-width: 100%
+		display: block
+		width: 100%
+		text-align: left
+		padding-bottom: 20px
+		br
+			display: none
+	.title
+		.h4
+			//text-align: center
+		.text-right
+			//text-align: center
+			
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+	.grafik
+		background-image: url('../img/bg2.png')
+		background-size: 520px
+		.row
+			min-height: 460px
+	.title
+		max-width: 480px
+	.fz26
+		font-size: 26px
+	.sec.sec6
+		background-image: url('../img/bg6.png')
+		background-size: auto 380px
+		padding-top: 180px
+		background-position: 50% -100px
+	.data-d .fz18
+		font-size: 18px
+	.sec.sec3
+		background-image: url('../img/bg3.png')
+		background-size: auto 385px
+		background-position: 60% -100px
+		.title
+			max-width: 300px
+			margin-bottom: 140px
+	.sec.sec4
+		background-size: auto 280px
+		background-image: url('../img/bg4.png')
+		background-position: 40% -50px
+		padding-top: 60px
+		.title
+			max-width: 300px
+			margin-bottom: 80px
+	.sec.sec5
+		.title
+			max-width: 300px
+// ≤768px
++media-breakpoint-up(md)
+	.header
+		.bt.popup
+			display: inline-block
+	.sec.sec3 .title
+		max-width: 480px
+		margin-bottom: 60px
+	.sec.sec4
+		background-size: auto 315px
+		.title
+			max-width: 480px
+	.sec.sec5
+		.title
+			max-width: 480px
+	.first-sec
+		.title
+			margin-bottom: 20px
+		p
+			&.cw
+				font-size: 14px
+				text-align: right
+		p.fz36
+			font-size: 36px
+		.text-left
+			text-align: left
+	.data-m
+		display: none
+	.data
+		display: block
+	.height-full
+		height: 100vh
+		min-height: 600px
+	.data
+		position: absolute
+	.title
+		.h3
+			font-size: $title-fz
+			line-height: 3rem
+		small
+			font-size: 30px
+			line-height: 30px
+			&.fz24
+				font-size: 24px
+				line-height: 24px
+	.sec
+		background-size: cover
+		background-position: 50% 50%
+		padding-top: 80px
+		padding-bottom: 80px
+	.sec.sec0
+		background-image: url('../img/bg_new.jpg')
+	footer
+		background-image: url('../img/bg_new.jpg')
+	.sec.sec3
+		background-image: url('../img/bg-3.jpg')
+		background-position: 50% 0px
+		background-size: cover
+	.sec.sec6
+		background-image: url('../img/bg6.png')
+		background-size: auto 520px
+		background-position: 50% -180px
+		padding-top: 165px
+		.title .h4
+			text-align: center
+		.title .h3
+			margin-bottom: 20px
+	.sec.sec4
+		background-position: 40% 0px
+// ≤992px
++media-breakpoint-up(lg)
+	.sec.sec3
+		padding-top: 0
+	.sec.sec5 ul li
+		max-width: 300px
+	.days
+		max-width: 300px
+	.sec.sec6
+		padding-bottom: 0px
+		background-position: 50% 100%
+		background-size: contain
+		background-color: #3c1c40
+	.title .h3
+		font-size: $title-fz
+		line-height: 3rem
+	.row-f
+		height: 100vh
+	.sec.sec4
+		background-position: 25% 0%
+		padding-bottom: 40px
+		background-size: cover
+	.sec.sec6
+		background-size: cover
+		padding-bottom: 80px
+		padding-top: 80px
+		.title .h4
+			text-align: left
+		.title.text-right .h4
+			text-align: right
+	.header
+		padding-top: 15px
+// ≤1200px
++media-breakpoint-up(xl)
+	.sec.sec4
+		background-position: 45% 0%
+		padding-bottom: 80px
